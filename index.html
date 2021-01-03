@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Bookmarklet Maker</h1>
+    <hr/>
+    <a href="javascript:(function(){alert('hello')})();">Bookmarklet</a><br/>
+    <textarea cols="150" rows="10"></textarea><br/>
+    <input value="Bookmarklet"/>
+    <script src="sketch.js"></script>
+    <!-- The Code Examples -->
+    <div class="code-container">
+      <p>Import Library From URL</p>
+      <code>
+        let script = document.createElement("script");<br/>
+        script.src = "https://files-url.com";<br/>
+        document.body.appendChild(script);
+      </code>
+    </div>
+    <div class="code-container">
+      <p>Select all paragraphs</p>
+      <code>
+        let paragraphs = document.getElementsByTagName("p");
+        // do something
+      </code>
+    </div>
+  </body>
+</html>
